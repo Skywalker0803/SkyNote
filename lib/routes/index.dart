@@ -2,7 +2,7 @@ import "package:flutter/material.dart";
 import "package:skynote/widgets/search_bar.dart";
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 10, horizontal: 17),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+          children: <Widget>[
             const SizedBox(height: 10),
             Search(),
             const SizedBox(height: 20),

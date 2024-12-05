@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:skynote/editor/editor.dart";
 import "package:skynote/main.dart";
 import "package:skynote/utils/ui.dart";
 
@@ -46,11 +47,11 @@ class Search extends StatelessWidget {
                               onPressed:
                                   () => Navigator.of(context).push(
                                     MaterialPageRoute(
-                                      builder: (context) => const AboutPage(),
+                                      builder: (context) => const NoteEditor(),
                                     ),
                                   ),
                               child: Row(
-                                children: [
+                                children: <Widget>[
                                   const Icon(Icons.settings),
                                   SizedBox(width: 15),
                                   Text("设置"),
